@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 if (isset($_SESSION['log_count'])){
 	$log_count = $_SESSION['log_count'];
@@ -14,7 +14,7 @@ if (isset($_SESSION['log_count'])){
 
 	<!--this is for link css file-->
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-	
+
 	<!--//this is for link icons for site-->
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
@@ -52,15 +52,15 @@ if (isset($_SESSION['log_count'])){
 					<i id="SocialMediaTop2" class="fa fa-twitter fa-2x" aria-hidden="true"></i>
 					<i id="SocialMediaTop3" class="fa fa-instagram fa-2x" aria-hidden="true"></i>
 					<i id="SocialMediaTop4" class="fa fa-youtube fa-2x" aria-hidden="true"></i>
-				</center>	
-			</div>	
+				</center>
+			</div>
 		</div>
 
 		<div class="row" id="Header">
 			<!--add navgation bar to site-->
 			<nav class="navbar navbar-inverse" id="NavBar">
 			  <div class="container-fluid" >
-			    <div class="navbar-header"> 
+			    <div class="navbar-header">
 			      <a class="navbar-brand" href="index.php" id="NavFontLogo">Nivahan.lk</a>
 			    </div>
 			    <ul class="nav navbar-nav" >
@@ -68,18 +68,18 @@ if (isset($_SESSION['log_count'])){
 			      <li><a href=<?php if (isset($_SESSION['uname'])){echo 'FindAProffesinal.php';}else{echo 'signup.php';}?> id="NavFont">Find Proffesional</a></li>
 			      <li><a href="forum.php" id="NavFont">Forum</a></li>
 			      <li><a href="Wiki.php" id="NavFont">Wiki</a></li>
-			      <li><a href="#" id="NavFont">About Us</a></li>  
+			      <li><a href="#" id="NavFont">About Us</a></li>
 			    </ul>
-			    
+
 				<form class="navbar-form navbar-right" id="NavFont">
 			      <div class="form-group" id="SearchBarButton">
 			        <input type="text" class="form-control" placeholder="Search">
 			      </div>
 			      <button type="submit" class="btn btn-default" id="SearchBarButton"><i class="fa fa-search " aria-hidden="true"></i></button>
 			    </form>
-			    
+
 				<ul class="nav navbar-nav navbar-right" id="NavFont">
-				<?php 
+				<?php
 					if (isset($_SESSION['uname'])){
 				?>
 						<li><a href="<?php echo('ArchiProfile(archi view).php');?>" id="NavFont"><i class="fa fa-user-circle-o" aria-hidden="true"></i><?php echo($_SESSION['uname']) ?> </a></li>
@@ -90,7 +90,7 @@ if (isset($_SESSION['log_count'])){
 			      <li><a href="signup.php" id="NavFont"><i class="fa fa-user-plus " aria-hidden="true"></i> Sign Up</a></li>
 			      <li><a href="login.php" id="NavFont"><i class="fa fa-sign-in " aria-hidden="true"></i> Login</a></li>
 			    </ul>
-			    <?php 
+			    <?php
 			    }
 			     ?>
 
@@ -108,8 +108,6 @@ if (isset($_SESSION['log_count'])){
 						<li data-target="#myCarousel" data-slide-to="2"></li>
 						<li data-target="#myCarousel" data-slide-to="3"></li>
 						<li data-target="#myCarousel" data-slide-to="4"></li>
-
-
 					</ol>
 
 					<!-- Wrapper for slides -->
@@ -148,7 +146,7 @@ if (isset($_SESSION['log_count'])){
 
 							</div>
 						</div>
-
+					</div>
 
 
 						<!-- Left and right controls -->
@@ -161,7 +159,7 @@ if (isset($_SESSION['log_count'])){
 				    <span class="sr-only">Next</span>
 				  </a>
 				</div>
-			</div> 
+			</div>
 		</div>
 
 		<div class="row" id="NewsFeed">
@@ -208,7 +206,7 @@ if (isset($_SESSION['log_count'])){
 	            	</center>
 	            	<hr/>
 	            	<p>You can view the  profiles of Architects who are spread all over Sri Lanka. All Architects are registered under Sri Lanka Institute of Architects (SLIA)</p>
-	            	<a href="#">more..</a> 
+	            	<a href="#">more..</a>
 				</div>
 				<div class = "col-md-4" id="NewsFeedImages">
 					<img  src = "images/6.jpg" class="img-rounded center-block" alt="Cinque Terre" width="304" height="236">
@@ -229,7 +227,7 @@ if (isset($_SESSION['log_count'])){
 				<center>
 					<h2>Latest designs</h2>
 					<ul>
-    				<li>Spring</li>   					
+    				<li>Spring</li>
     				<li>Summer</li>
    					<li>Autumn</li>
     				<li>Winter</li>
@@ -242,7 +240,7 @@ if (isset($_SESSION['log_count'])){
 				<center>
 					<h2>Profiles</h2>
 					<ul>
-    				<li>Augest 2010</li>   					
+    				<li>Augest 2010</li>
     				</ul>
     			</center>
 
@@ -252,7 +250,7 @@ if (isset($_SESSION['log_count'])){
 				<center>
 					<h2>House Categories</h2>
 					<ul>
-    				<li>Spring</li>   					
+    				<li>Spring</li>
     				<li>Summer</li>
    					<li>Autumn</li>
     				<li>Winter</li>
@@ -266,7 +264,7 @@ if (isset($_SESSION['log_count'])){
 				<center>
 					<h2>Contact US</h2>
 					<ul>
-    				<li>Mobile</li>   					
+    				<li>Mobile</li>
     				<li>E-Mail</li>
    					<li>Office</li>
     				</ul>
@@ -274,7 +272,7 @@ if (isset($_SESSION['log_count'])){
 				</div>
 		</div>
 
-	</div>	
+	</div>
 </body>
 
 </html>
